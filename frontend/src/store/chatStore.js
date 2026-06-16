@@ -27,7 +27,7 @@ export const useChatStore = create((set, get) => ({
     
     // Convert API URL endpoint back to main URL (e.g. drop /api)
     const baseApiUrl = getBaseUrl();
-    const socketUrl = baseApiUrl.replace(/\/api$/, '') || 'http://localhost:5000';
+    const socketUrl = baseApiUrl.replace(/\/api$/, '') || 'http://localhost:5051';
     
     console.log('Connecting socket to:', socketUrl);
     const newSocket = io(socketUrl);
